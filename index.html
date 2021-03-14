@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Show message</title>
+
+<style>
+
+@font-face{
+
+	font-family:"xm yekan";	src: url(http://1learn.ir/wp-content/themes/1learn-V2/font/xmyekan.ttf?#) format('eot'),
+
+	url(http://1learn.ir/wp-content/themes/1learn-V2/font/xmyekan.ttf) format('truetype'),
+
+	url(http://1learn.ir/wp-content/themes/1learn-V2/font/xmyekan.ttf) format('woff');	
+
+}
+
+.project{
+
+	direction:rtl;
+
+}
+
+input#box{
+
+	position:absolute;
+
+	top:-999999px;
+
+	left:-99999px;
+
+}
+
+.btn{
+
+	display:block;
+
+	width:200px;
+
+	height:30px;
+
+	background-color:#999;
+
+	text-align:center;
+
+	color:#FFF;
+
+	font-family:"xm yekan";
+
+	font-size:20px;
+
+	padding:10px 0 10px 0;
+
+	border-radius:5px;
+
+}
+
+.btn:hover{
+
+	cursor:pointer;
+
+	background:#CCC;
+
+}
+
+.mainbox{
+
+	position: absolute;
+
+	top:0;
+
+	right:0;
+
+	bottom: 0;
+
+	left: 0;
+
+	z-index:-100;
+
+	width:500px;
+
+	height:200px;
+
+	margin:auto;
+
+	padding:10px;
+
+	background:#CF9;
+
+	border-radius:10px;
+
+	opacity:0;
+
+	transition:opacity 1s ease;
+
+	border-bottom:solid 2px #030;
+
+}
+
+input#box:checked + .mainbox{
+
+	opacity:1;
+
+	z-index:1;
+
+}
+
+.mainbox p{
+
+	text-align:center;
+
+	color:#060;
+
+	font-family:"xm yekan";
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+	<div class="project">
+
+		<label class="btn" for="box">کلیک کن ! </label>
+
+    	<input type="checkbox" id="box" />
+
+        <div class="mainbox">
+
+        	<p>ا Today is a good day💁</p>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
